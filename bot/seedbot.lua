@@ -4,7 +4,7 @@ package.cpath = package.cpath .. ';.luarocks/lib/lua/5.2/?.so'
 
 require("./bot/utils")
 
-VERSION = '1.0'
+VERSION = '1.5'
 
 -- This function is called when tg receive a msg
 function on_msg_receive (msg)
@@ -217,23 +217,23 @@ function create_config( )
     "get",
     "broadcast",
     "download_media",
-    "invite",
     "all",
     "leave_ban"
     },
-    sudo_users = {110626080,103649648,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {139274725,156513822},--Sudo users
     disabled_channels = {},
+    realm = {58464775},--Realms Id
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v2 - Open Source
+    about_text = [[DALADbot v1.5 - Open Source
 An advance Administration bot based on yagop/telegram-bot 
 
-https://github.com/SEEDTEAM/TeleSeed
+https://github.com/TeleDALAD/883bot
 
 Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@Rondoozle [Developer]
-@seyedan25 [Manager]
+@DALAD2_ACC2 [Founder]
+@Abolfazl883 [Developer]
+@DALTON4 [Developer]
+@shahinzk_m [Manager]
 
 Special thanks to
 awkward_potato
@@ -242,8 +242,7 @@ topkecleon
 Vamptacus
 
 Our channels
-@teleseedch [English]
-@iranseed [persian]
+@iran_DALAD [persian]
 ]],
     help_text_realm = [[
 Realm Commands:
